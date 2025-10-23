@@ -6,7 +6,7 @@ import sys
 pygame.init()
 
 # Screen setup
-WIDTH, HEIGHT = 600, 400
+WIDTH, HEIGHT = 600, 600
 LANES = [WIDTH // 4, WIDTH // 2, 3 * WIDTH // 4]
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Mini Subway Surfer - Shooter Edition (Scoring)")
@@ -29,7 +29,7 @@ player_rect = pygame.Rect(LANES[lane_index] - player_size // 2, player_y, player
 obstacle_size = 40
 obstacles = []  # list of tuples (rect, color, shootable)
 spawn_timer = 0
-spawn_interval = 60  # frames between spawns
+spawn_interval = 80  # frames between spawns
 
 # Bullets
 bullet_size = 10
@@ -38,7 +38,7 @@ bullet_speed = 10
 shoot_cooldown = 0
 
 # Movement
-speed = 6
+speed = 2
 background_y = 0
 
 # Font
